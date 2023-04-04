@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+struct student {
+    char name[20];
+    int rollno;
+    int marks;
+};
+void display(char*,int,int);
+int main()
+{
+    struct student stu1={"john",12,87};
+    struct student stu2;
+    strcpy(stu2.name,"mary");
+    stu2.rollno=18;
+    stu2.marks=90;
+    display(stu1.name,stu1.rollno,stu1.marks);
+    display(stu2.name,stu2.rollno,stu2.marks);
+}
+void display(char* name,int rollno,int marks)
+{
+    printf("name -%s\t",name);
+    printf("rollno-%d\t",rollno);
+    printf("marks-%d\n",marks);
+}
+
+/*
+output:
+name-john       rollno-12     marks-87
+name-mary        rollno-18      marks-90
+*/
