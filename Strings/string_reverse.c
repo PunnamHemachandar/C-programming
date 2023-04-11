@@ -20,3 +20,9 @@ int main()
     }
     
 }
+/*
+output :
+strng is:  hemachandar
+length is: 11
+reverse string is : radnahcameh
+*/
