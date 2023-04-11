@@ -9,3 +9,7 @@ int main()
     printf("copied string is %s\n",str2);
     
 }
+/*
+output: enter string is hemu
+copied string is hemu
+*/
